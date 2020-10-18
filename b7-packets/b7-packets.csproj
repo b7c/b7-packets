@@ -68,8 +68,18 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TanjiWPF\DataCaptureCallback.cs" />
+    <Compile Include="TanjiWPF\DataInterceptorException.cs" />
+    <Compile Include="TanjiWPF\ExtensionWindow.cs" />
+    <Compile Include="TanjiWPF\HashResolvingException.cs" />
+    <Compile Include="TanjiWPF\Identifier.cs" />
+    <Compile Include="TanjiWPF\UnknownIdentifierException.cs" />
+    <Compile Include="TanjiWPF\WindowExtensions.cs" />
+    <Compile Include="TanjiWPF\WpfModule.cs" />
+    <Compile Include="TanjiWPF\WpfModuleLoader.cs" />
     <Compile Include="Util\PacketUtil.cs" />
     <Compile Include="Util\StringUtil.cs" />
     <Compile Include="WPF\Commands\MessageCommands.cs" />
@@ -147,12 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\tanjiwpf\tanjiwpf\TanjiWPF.csproj">
-      <Project>{e7246312-2de4-44a7-a53f-95a6b12d0902}</Project>
-      <Name>TanjiWPF</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

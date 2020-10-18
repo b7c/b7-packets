@@ -17,13 +17,13 @@ namespace b7.Packets
             packetLogger.Window = this;
         }
 
-        protected override void OnAttach()
+        public override void OnAttach()
         {
             messagesView.LoadMessages(Module.Game);
         }
 
-        protected override void HandleIncoming(DataInterceptedEventArgs e) => packetLogger.HandleData(e);
-        protected override void HandleOutgoing(DataInterceptedEventArgs e) => packetLogger.HandleData(e);
+        public override void HandleIncoming(DataInterceptedEventArgs e) => packetLogger.HandleData(e);
+        public override void HandleOutgoing(DataInterceptedEventArgs e) => packetLogger.HandleData(e);
 
         public void LoadInStructuralizer(VmPacketLog log)
         {
