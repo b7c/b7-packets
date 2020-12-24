@@ -41,13 +41,11 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Flazzy, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>S:\Programs\Tanji\1.4.1390\Flazzy.dll</HintPath>
+    <Reference Include="Flazzy">
+      <HintPath>..\..\..\..\..\Programs\Tanji\Flazzy.dll</HintPath>
     </Reference>
-    <Reference Include="Sulakore, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>S:\Programs\Tanji\1.4.1390\Sulakore.dll</HintPath>
+    <Reference Include="Sulakore">
+      <HintPath>..\..\..\..\..\Programs\Tanji\Sulakore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -61,9 +59,8 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="Tangine, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>S:\Programs\Tanji\1.4.1390\Tangine.dll</HintPath>
+    <Reference Include="Tangine">
+      <HintPath>..\..\..\..\..\Programs\Tanji\Tangine.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
